@@ -1,0 +1,39 @@
+﻿# Python environments
+.venv/
+venv/
+backend/venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Secrets
+.env
+.env.*
+!.env.example
+backend/.env
+
+# Databases and local data
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploaded evidence
+backend/uploads/
+
+# Frontend dependencies and builds
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local test evidence and generated reports
+backend/view*.pdf
+backend/*evidence*.txt
+backend/EscrowPilot_Evidence_Report.pdf

@@ -1,0 +1,149 @@
+
+.payments-page {
+  padding: 30px;
+  color: #17243c;
+}
+
+.payments-heading,
+.payment-history-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.payments-heading h1 {
+  margin: 8px 0;
+  font-size: 30px;
+}
+
+.payments-heading p,
+.payment-create-card p,
+.payment-history-card p {
+  color: #718096;
+}
+
+.payments-eyebrow {
+  color: #2864e8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.sandbox-label {
+  background: #e5f8f2;
+  color: #07866c;
+  padding: 9px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.payment-create-card,
+.payment-history-card {
+  background: white;
+  border: 1px solid #e5eaf2;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 24px;
+}
+
+.payment-create-card h2,
+.payment-history-card h2 {
+  margin-top: 0;
+}
+
+.payment-create-card label {
+  display: block;
+  margin: 18px 0 8px;
+  font-weight: 600;
+}
+
+.payment-create-card input {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  padding: 12px;
+  border: 1px solid #dce3ed;
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+
+.payment-create-card button,
+.payment-history-heading button {
+  background: #2864e8;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.payment-create-card button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.payment-history-heading {
+  margin-bottom: 18px;
+}
+
+.payment-table-wrap {
+  overflow-x: auto;
+}
+
+.payment-table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.payment-table-wrap th,
+.payment-table-wrap td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #edf0f5;
+  font-size: 13px;
+}
+
+.payment-table-wrap th {
+  color: #718096;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.payment-status {
+  padding: 5px 9px;
+  border-radius: 20px;
+  background: #fff3d9;
+  color: #9a6500;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.payment-status.completed {
+  background: #e1f8ed;
+  color: #087d50;
+}
+
+.payment-message {
+  padding: 14px;
+  background: #eef4ff;
+  color: #2453a6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 650px) {
+  .payments-page {
+    padding: 16px;
+  }
+
+  .payments-heading,
+  .payment-history-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
